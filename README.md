@@ -35,7 +35,7 @@ src/
 │   ├── WeatherHeader.jsx      # Static page title and subtitle
 │   ├── WeatherSearch.jsx      # Controlled search form + validation
 │   └── WeatherCard.jsx        # Per-city weather fetch, auto-refresh, and display
-├── WeatherCityInputData.jsx   # Hardcoded city → coordinates lookup table
+    └── WeatherCityInputData.jsx
 └── index.css                  # Tailwind entry point
 ```
 
