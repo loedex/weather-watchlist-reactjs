@@ -39,17 +39,17 @@ const WeatherSearch = ({searchText, onSearch, watchlist, onWatchlist}) => {
     
   return (
     <div>
-        <form onSubmit={handleSubmit}  className='flex gap-2 px-10'>
+        <form onSubmit={handleSubmit}  className='flex gap-2 px-10 flex-col justify-center items-center'>
             <input
             type="text"
             placeholder='Enter city name ...'
-            className='outline-0 border border-gray-700 rounded-full grow px-7 py-3' 
+            className='outline-0 border border-gray-700 rounded-full w-full px-7 py-3' 
             value={searchText}
             onChange={(e)=> onSearch(e.target.value)}
             />
             <button
              type='submit'
-             className='bg-blue-900 text-white hover:bg-blue-950 rounded-full px-3 cursor-pointer'
+             className='bg-blue-900 px-5 py-3 text-white hover:bg-blue-950 rounded-full cursor-pointer'
              >Add to watchlist</button>
         </form>
        {error && <p className='text-red-600 ml-15'>{error}</p>}
